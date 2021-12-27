@@ -1,0 +1,15 @@
+.tableHeader {
+    background-color: #1c1b1b;
+}
+.tableHeader th {
+    color: aliceblue !important;
+}
+.addButton {
+    position: fixed !important;
+    bottom: 15px; right: 15px;
+}
+.card {
+    width: 500px;
+    height: 405px;
+    margin: 40px 100px;
+}

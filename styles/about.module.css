@@ -1,0 +1,46 @@
+.main {
+    width: 80% !important;
+}
+.container {
+    display: inline-block;
+}
+
+.userCard {
+    display: inline-block;
+    width: 450px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 20px;
+    background: lightgray;
+    margin: 10px 15px;
+    box-shadow: 0 0 1px rgb(56 56 56);
+    height: 180px !important;
+}
+
+.details {
+    width: 275px;
+    padding-left: 20px;
+    float: right;
+}
+
+.details p {
+    margin-top: 0px !important;
+}
+
+.right {
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+}
+
+.img {
+    border-radius: 50%;
+}
+
+.button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 10px;
+}
