@@ -58,8 +58,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     paths: data.map((user: any) => ({
       params: { userId: user.id.toString() },
     })),
-    //fallback: false,
-    fallback: true,
+    fallback: "blocking"
   };
 };
 
@@ -70,7 +69,7 @@ export const getStaticProps: GetStaticProps<UserPageProps> = async (
   if (!userId) return { notFound: true };
 
   const response = await fetch(
-    `https://jsonplaceholder.typicode.com/users/${userId}`
+    `http://localhost:3001/employees/${userId}`
   );
   const data = await response.json();
 
@@ -78,8 +77,7 @@ export const getStaticProps: GetStaticProps<UserPageProps> = async (
     props: {
       user: data,
     },
-    //revalidate: false
-    revalidate: 5,
+    revalidate: 5
   };
 };
 

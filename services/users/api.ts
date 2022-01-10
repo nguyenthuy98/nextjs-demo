@@ -4,7 +4,7 @@ import { env } from '../../env'
 
 const getUsersList = async (): Promise<any> => {
     try {
-        return await axios.get(`${env.baseUrl}/users`)
+        return await axios.get(`${env.baseUrl}/employees`)
     } catch(err) {
         throw err
     }
